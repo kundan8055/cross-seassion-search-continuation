@@ -1,0 +1,82 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<mata charset="UTF-8">
+		<title>stp</title>
+	<style>
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 10px; 
+    width: 70px;
+    height: 40px;    
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+	</head>
+	<body bgcolor="#ffe6e6">
+	<form action="annotation.py" method="post">
+		<p>Intent type<br>
+
+<select name="Intent type">
+  <option value="fact finding">fact finding</option>
+  <option value="information gathering">information gathering</option>
+  <option value="undirected browsing">undirected browsing</option>
+  <option value="transaction">transaction</option>
+  <option value="communication(social)">communication(social)</option>
+  <option value="info maintenance or update">info maintenance or update</option>
+</select></p>
+
+<p>
+Motivation1 <br>
+		<select name="Motivation">
+  <option value="Affective">Affective</option>
+  <option value="cognitive">cognitive</option>
+  <option value="self-assistive">self-assistive</option>
+  <option value="social">social</option>
+</select></p>
+<p>
+Complexity <br>
+		<select name="Complexity">
+  <option value="single goal">single goal</option>
+  <option value="multiple goals">Multiple goals</option>
+  <option value="undirected(no goal)">undirected(no goal)</option>
+</select></p>
+<p>
+Work or fun?? <br> 
+		<select name="Work">
+  <option value="Work">Work</option>
+  <option value="fun">fun</option>
+</select>
+</p>
+Time sensitivity <br>
+		<select name="Time">
+  <option value="urgent">urgent</option>
+  <option value="very urgent">very urgent</option>
+  <option value="not urgent">not urgent</option>
+</select></p>
+<br>
+<button id="rcorners1" class="button button">Done</button>
+</form>
+	</body>
+	</html>

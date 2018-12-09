@@ -1,0 +1,56 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<mata charset="UTF-8">
+		<title>stp</title>
+	</head>
+	<body>
+	<form action="annotation.py" method="post">
+		Intent type
+<select name="Intent type">
+  <option value="fact finding">fact finding</option>
+  <option value="information gathering">information gathering</option>
+  <option value="undirected browsing">undirected browsing</option>
+  <option value="transaction">transaction</option>
+  <option value="communication(social)">communication(social)</option>
+  <option value="info maintenance or update">info maintenance or update</option>
+</select>
+<br>
+Motivation
+		<select name="Motivation">
+  <option value="Affective">Affective</option>
+  <option value="cognitive">cognitive</option>
+  <option value="self-assistive">self-assistive</option>
+  <option value="social">social</option>
+</select>
+<br>
+Complexity
+		<select name="Complexity">
+  <option value="single goal">single goal</option>
+  <option value="multiple goals">Multiple goals</option>
+  <option value="undirected(no goal)">undirected(no goal)</option>
+</select>
+<br>
+Work or fun??
+		<select name="Work">
+  <option value="Work">Work</option>
+  <option value="fun">fun</option>
+</select>
+<br>
+continue or not??
+		<select name="Continue">
+  <option value="likely">likely</option>
+  <option value="unlikely">unlikely</option>
+</select>
+<br>
+Time sensitivity
+		<select name="Time">
+  <option value="urgent">urgent</option>
+  <option value="very urgent">very urgent</option>
+  <option value="not urgent">not urgent</option>
+</select>
+<br>
+<input type="submit" value="Submit"/>
+</form>
+	</body>
+	</html>
